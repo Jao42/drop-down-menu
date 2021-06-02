@@ -29,11 +29,13 @@
 
 }
 .items > li ul {
-  top: 30%;
-  position: relative;
+  position: absolute;
+  top: 40px;
+  width: 15%;
   list-style: none;
   visibility: hidden;
-  display: none;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -52,19 +54,19 @@
 .items > li:hover ul {
 
   visibility: visible;
-  display: flex;
-  flex-direction: column;
-  
+  background-color: gray;
 
 }
 .items > li > ul > li {
+  display: flex;
   background-color: gray;
   padding: 5px;
   margin: 2px;
+  justify-content: center;
+  align-content: center;
 
 
 }
-
 
 .items > li > *:first-child {
   display: flex;
